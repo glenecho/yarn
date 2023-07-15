@@ -1,0 +1,22 @@
+{
+    "name": "yarn",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+        "@babel/core": "^7.22.9",
+        "@babel/node": "^7.22.6",
+        "@babel/preset-env": "^7.22.9",
+        "cors": "^2.8.5",
+        "express": "^4.18.2",
+        "lodash": "^4.17.21",
+        "swagger-jsdoc": "^6.2.8",
+        "swagger-ui-express": "^5.0.0",
+        "uuid": "^9.0.0"
+    },
+    "scripts": {
+        "demo_lodash": "node --require @babel/register yarn_lodash.mjs",
+        "demo_json": "node --require @babel/register json.mjs",
+        "demo_swagger": "node --require @babel/register swagger.mjs"
+    }
+}
