@@ -1,7 +1,7 @@
 {
     "name": "yarn",
     "version": "1.0.0",
-    "main": "index.js",
+    "main": "./index.js",
     "license": "MIT",
     "dependencies": {
         "@babel/core": "^7.22.9",
@@ -9,14 +9,28 @@
         "@babel/preset-env": "^7.22.9",
         "cors": "^2.8.5",
         "express": "^4.18.2",
+        "jquery": "^3.7.0",
         "lodash": "^4.17.21",
         "swagger-jsdoc": "^6.2.8",
         "swagger-ui-express": "^5.0.0",
-        "uuid": "^9.0.0"
+        "uuid": "^9.0.0",
+        "webpack": "^5.88.1",
+        "webpack-cli": "^5.1.4"
     },
     "scripts": {
-        "demo_lodash": "node --require @babel/register yarn_lodash.mjs",
-        "demo_json": "node --require @babel/register json.mjs",
-        "demo_swagger": "node --require @babel/register swagger.mjs"
+        "demo_lodash": "node --require @babel/register src/yarn_lodash.mjs",
+        "demo_json": "node --require @babel/register src/json.mjs",
+        "demo_swagger": "node --require @babel/register src/swagger.mjs",
+        "build": "webpack --config webpack.config.js"
+    },
+    "devDependencies": {
+        "babel-loader": "^9.1.3",
+        "css-loader": "^6.8.1",
+        "html-webpack-plugin": "^5.5.3",
+        "less": "^4.1.3",
+        "less-loader": "^11.1.3",
+        "node-sass": "^9.0.0",
+        "sass-loader": "^13.3.2",
+        "style-loader": "^3.3.3"
     }
 }
